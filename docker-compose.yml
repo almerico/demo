@@ -31,7 +31,7 @@ services:
     environment:
       # JAVA_OPTS: "-Xdebug -Xrunjdwp:server=y,transport=dt_socket,address=8000,suspend=n -noverify"
       SPRING_JMX_ENABLED: "false"
-      ACT_KEYCLOAK_URL: "http://192.168.1.13.nip.io:8180/auth"
+      ACT_KEYCLOAK_URL: "http://activiti-keycloak.192.168.1.9.nip.io:8180/auth"
       SPRING_RABBITMQ_HOST: "rabbitmq"
     restart: unless-stopped
   example-cloud-connector:
@@ -44,7 +44,7 @@ services:
       # JAVA_OPTS: "-Xdebug -Xrunjdwp:server=y,transport=dt_socket,address=8000,suspend=n -noverify"
       SPRING_JMX_ENABLED: "false"
       SPRING_RABBITMQ_HOST: "rabbitmq"
-      ACT_KEYCLOAK_URL: "http://192.168.1.13.nip.io:8180/auth"
+      ACT_KEYCLOAK_URL: "http://activiti-keycloak.192.168.1.9.nip.io:8180/auth"
     restart: unless-stopped
 
   activiti-cloud-query:
@@ -56,7 +56,7 @@ services:
       # JAVA_OPTS: "-Xdebug -Xrunjdwp:server=y,transport=dt_socket,address=8000,suspend=n -noverify"
       SPRING_JMX_ENABLED: "false"
       SPRING_RABBITMQ_HOST: "rabbitmq"
-      ACT_KEYCLOAK_URL: "http://192.168.1.13.nip.io:8180/auth"
+      ACT_KEYCLOAK_URL: "http://activiti-keycloak.192.168.1.9.nip.io:8180/auth"
     restart: unless-stopped      
   
   activiti-cloud-audit:
@@ -68,7 +68,7 @@ services:
       # JA`VA_OPTS: "-Xdebug -Xrunjdwp:server=y,transport=dt_socket,address=8000,suspend=n -noverify"
       SPRING_JMX_ENABLED: "false"
       SPRING_RABBITMQ_HOST: "rabbitmq"
-      ACT_KEYCLOAK_URL: "http://192.168.1.13.nip.io:8180/auth"
+      ACT_KEYCLOAK_URL: "http://activiti-keycloak.192.168.1.9.nip.io:8180/auth"
     restart: unless-stopped      
 
   activiti-cloud-notifications-graphql:  
@@ -80,7 +80,7 @@ services:
       # JAVA_OPTS: "-Xdebug -Xrunjdwp:server=y,transport=dt_socket,address=8000,suspend=n -noverify"
       SPRING_JMX_ENABLED: "false"
       SPRING_RABBITMQ_HOST: "rabbitmq"
-      ACT_KEYCLOAK_URL: "http://192.168.1.13.nip.io:8180/auth"
+      ACT_KEYCLOAK_URL: "http://activiti-keycloak.192.168.1.9.nip.io:8180/auth"
     restart: unless-stopped   
 
   activiti-cloud-modeling-frontend:
@@ -92,7 +92,7 @@ services:
     # JAVA_OPTS: "-Xdebug -Xrunjdwp:server=y,transport=dt_socket,address=8000,suspend=n -noverify"
       SPRING_JMX_ENABLED: "false"
       SPRING_RABBITMQ_HOST: "rabbitmq"
-      ACT_KEYCLOAK_URL: "http://192.168.1.13.nip.io:8180/auth"
+      ACT_KEYCLOAK_URL: "http://activiti-keycloak.192.168.1.9.nip.io:8180/auth"
     restart: unless-stopped   
 
   activiti-cloud-modeling-backend:
@@ -104,7 +104,7 @@ services:
     # JAVA_OPTS: "-Xdebug -Xrunjdwp:server=y,transport=dt_socket,address=8000,suspend=n -noverify"
       SPRING_JMX_ENABLED: "false"
       SPRING_RABBITMQ_HOST: "rabbitmq"
-      ACT_KEYCLOAK_URL: "http://192.168.1.13.nip.io:8180/auth"
+      ACT_KEYCLOAK_URL: "http://activiti-keycloak.192.168.1.9.nip.io:8180/auth"
     restart: unless-stopped   
 
     # core-asset-connector:
@@ -117,7 +117,7 @@ services:
     ## JAVA_OPTS: "-Xdebug -Xrunjdwp:server=y,transport=dt_socket,address=8000,suspend=n -noverify"
     #  SPRING_JMX_ENABLED: "false"
     #  SPRING_RABBITMQ_HOST: "rabbitmq"
-    #  ACT_KEYCLOAK_URL: "http://192.168.1.13.nip.io:8180/auth"
+    #  ACT_KEYCLOAK_URL: "http://activiti-keycloak.192.168.1.9.nip.io:8180/auth"
     #restart: unless-stopped
 
     #interra-baton-connector:
@@ -131,7 +131,7 @@ services:
     ## JAVA_OPTS: "-Xdebug -Xrunjdwp:server=y,transport=dt_socket,address=8000,suspend=n -noverify"
     #  SPRING_JMX_ENABLED: "false"
     #  SPRING_RABBITMQ_HOST: "rabbitmq"
-    #  ACT_KEYCLOAK_URL: "http://192.168.1.13.nip.io:8180/auth"
+    #  ACT_KEYCLOAK_URL: "http://activiti-keycloak.192.168.1.9.nip.io:8180/auth"
     #restart: unless-stopped
 
 volumes:
