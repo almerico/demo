@@ -57,3 +57,4 @@ $(foreach service,$(SERVICES),$(service)/logs):
 $(foreach service,$(SERVICES),$(foreach command,$(SERVICE_COMMANDS),$(service)/$(command))):
 	$(eval TASK := $(subst /, ,$@))
 	$(COMPOSE) $(word 2, $(TASK)) $(word 1, $(TASK))
+
